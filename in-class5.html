@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>February 2020 Election Night Precinct Results</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+</head>
+
+<body>
+
+</canvas><canvas id="myChart"></canvas>
+
+<script>
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Precint'],
+    datasets:[{ 
+      label: 'BEL 41-0011',
+      data: [352],
+      backgroundColor: "rgba(153,205,51,0.4)"
+    }, {
+      label: 'AUB 47-0045',
+      data: [849],
+      backgroundColor: "rgba(123,198,51,0.4)"
+       },
+{
+      label: 'BEL 48-0186',
+      data: [458],
+      backgroundColor: "rgba(135,123,51,0.4)"
+       }
+,{
+      label: 'BEL 48-0191',
+      data: [600],
+      backgroundColor: "rgba(200,200,51,0.4)"
+       }
+,{
+      label: 'KEN 47-0246',
+      data: [515],
+      backgroundColor: "rgba(255,255,51,0.4)"
+       }
+
+     ] 
+  }
+});
+
+</script>
+
+</body>
+
+</html>
+
